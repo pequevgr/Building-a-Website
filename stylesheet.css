@@ -11,6 +11,11 @@ h1{
 	font-size: 50px;
 }
 
+h2{
+	font-weight: 700;
+	font-size: 50px;
+}
+
 h3{
 	font-weight: bold;
 	font-size: 30px;
@@ -21,14 +26,20 @@ h4{
 	font-size: 20px;
 }
 
+p{
+	font-weight: 400;
+	font-size: 18px;
+	margin: 30px 0;
+}
+
 .wrapper {
 	width: 960px;
 	margin: 0 auto;
 }
 
 .hero-banner{
-	background: linear-gradient(
-		grey, #3E3E3E);
+	background: url('assets/Background.png');
+	background-size: 100%;
 	min-height: 100vh;
 	padding: 150px 20px;
 	box-sizing: border-box;
@@ -57,6 +68,7 @@ h4{
 	width: 1289px;
 	height: 804px;
 	position: absolute; top: 0; right: 80px;
+	z-index: -1;
 }
 
 .character2{
@@ -99,16 +111,77 @@ a.cta, button.cta{
 a.cta, button.cta.alt{
 	background-color: #E4117C;
 }
-/* <div class="hero-banner">
-		<div class="wrapper">
-			<h4>Not all those who wander are lost</h4>
-			<h1>Explore the world<br/>
-			through another lens.</h1>
-			<h3>Take a dive into the world of Obelix. Be a<br/>
-			participant in his life.</h3>
-			<a class="cta alt" href="#more-info">Explore</a>
-		</div>
-		<div class="character1"></div>
-		<div class="character2"></div>
-		<div class="character3"></div>
+
+nav {
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+	position: sticky;
+	top: 0;
+}
+
+nav .logo{
+	display: block;
+	width: 100px;
+	height: 40px;
+	position: absolute; top: 50%; left: 0;
+	margin-top: -10px;
+	margin-left: 30px;
+	background: url('assets/obelix_logo.png') no-repeat 0 0;
+	background-size: 100%;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+
+nav ul li{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	padding: 40px 10px;
+	line-height: 16px;
+}
+
+.more-info{
+	text-align: center;
+}
+
+.more-info p{
+	margin-top: 18px 0 35px;
+}
+
+.more-info h2{
+	margin: 50px 0 0;
+}
+
+
+.highlight{
+	background-color: #BBC7FF;
+	padding: 5px 10px;
+	line-height: 28px;
+	display: inline;
+	font-weight: 700;
+}
+
+
+/* <div class="more-info" id="more-info">
+		<h2>Become Part Of The Journey</h2>
+		<p>Every week <span class="highlight">discover</span> a new city, neighborhood, park with Obelix. Let’s explore the world through Obelix’s eyes.</p>
+		<button class="cta">Join</button>
 	</div> */
